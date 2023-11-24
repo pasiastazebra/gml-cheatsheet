@@ -47,9 +47,16 @@ function PageNavbar({ onNavClick }: any) {
       `,
     },
     gmlSide: {
-      title: "Objects test gml",
-      desc: "Object test desc",
-      code: `//Objects test gml`,
+      title: "GML",
+      desc: "Arrays can store values and methods aswell.",
+      code: `
+      //arrays in GML
+      var myArray = [
+        "String",
+        123,
+        function() { return(true); }
+      ];
+      `,
     },
   };
 
