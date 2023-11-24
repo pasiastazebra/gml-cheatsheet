@@ -18,7 +18,7 @@ function PageSide({ title, desc, code }: Props) {
         <div className="page-side-card-wrapper">
           <Card.Text className="page-side-card-description">{desc}</Card.Text>
           <Card.Text>
-            <Highlight className="language-javascript">{code}</Highlight>
+            <Highlight className="code language-javascript">{code}</Highlight>
           </Card.Text>
         </div>
       </Card>
