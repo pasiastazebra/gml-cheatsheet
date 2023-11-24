@@ -4,15 +4,17 @@ import PageContent from "./PageContent.tsx";
 import "./index.css";
 
 const pageTitle: string = "Page title test";
-const jsDesc: string = "JS description test";
-const jsCode: string = `//JavaScript
-const a = 1;
-  const b = 2;
-    const c = a + b;
-`;
+const jSide = {
+  title: "Javascript title",
+  code: `const function = () => return true;`,
+};
+const gmlSide = {
+  title: "GML title",
+  code: `//i have no idea how does GML code looks like`,
+};
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <PageContent pageTitle={pageTitle} jsDesc={jsDesc} jsCode={jsCode} />
+    <PageContent pageTitle={pageTitle} jSide={jSide} gmlSide={gmlSide} />
   </React.StrictMode>
 );
