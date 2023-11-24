@@ -1,19 +1,39 @@
+import { useState } from "react";
+
 import PageContent from "./PageContent.tsx";
 import PageNavbar from "./PageNavbar.tsx";
 
 function App() {
-  const pageTitle: string = "Page title test";
-  const jSide = {
-    title: "Javascript title",
-    code: `const function = () => return true;`,
+  interface PageContent {
+    pageTitle: string;
+    jSide: { title: string; code: string };
+    gmlSide: { title: string; code: string };
+  }
+
+  const placeholder = {
+    pageTitle: "Placeholder",
+    jSide: {
+      title: "Placeholder test js",
+      code: `//Placeholder test`,
+    },
+    gmlSide: {
+      title: "Placeholder test gml",
+      code: `//Placeholder test gml`,
+    },
   };
-  const gmlSide = {
-    title: "GML title",
-    code: `//i have no idea how does GML code looks like`,
+
+  const [pageContent, setPageContent] = useState(placeholder);
+
+  const handlePageChange = (value: PageContent) => {
+    setPageContent(value);
   };
+  const pageTitle: string = pageContent.pageTitle;
+  const jSide = pageContent.jSide;
+  const gmlSide = pageContent.gmlSide;
+
   return (
     <div id="App">
-      <PageNavbar />
+      <PageNavbar onNavClick={handlePageChange} />
       <PageContent pageTitle={pageTitle} jSide={jSide} gmlSide={gmlSide} />
     </div>
   );
