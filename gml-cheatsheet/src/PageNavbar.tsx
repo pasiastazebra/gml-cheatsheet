@@ -76,6 +76,32 @@ function PageNavbar({ onNavClick }: any) {
       code: `//Objects test gml`,
     },
   };
+
+  const functionsOption = {
+    pageTitle: "Objects",
+    jSide: {
+      title: "JavaScript",
+      desc: "Functions in JavaScript can be declared using 'function()' keyword, or using arrow function method.",
+      code: `
+      //functions in js
+
+      //using function keyword
+      const add = function(a, b) {
+        return a + b;
+      }
+
+      //arrow function
+      const add = (a, b) => {
+        return a + b;
+      }
+      `,
+    },
+    gmlSide: {
+      title: "Objects test gml",
+      desc: "Object test desc",
+      code: `//Objects test gml`,
+    },
+  };
   return (
     <Nav
       variant="pills"
@@ -96,7 +122,12 @@ function PageNavbar({ onNavClick }: any) {
         <Nav.Link eventKey="objects" onClick={() => handleClick(objectsOption)}>
           Objects
         </Nav.Link>
-        <Nav.Link eventKey="functions">Functions</Nav.Link>
+        <Nav.Link
+          eventKey="functions"
+          onClick={() => handleClick(functionsOption)}
+        >
+          Functions
+        </Nav.Link>
         <Nav.Link eventKey="operators">Operators</Nav.Link>
         <Nav.Link eventKey="loops">Loops</Nav.Link>
         <Nav.Link eventKey="ifs">if, else, switch</Nav.Link>
