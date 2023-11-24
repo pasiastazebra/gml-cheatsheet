@@ -161,6 +161,41 @@ function PageNavbar({ onNavClick }: any) {
       code: `//Objects test gml`,
     },
   };
+
+  const ifsOption = {
+    pageTitle: "If, else and swtich statements",
+    jSide: {
+      title: "JavaScript",
+      desc: "JavaScript offers for, for in, for of and while loop.",
+      code: `
+      //if, else & switch in js
+      
+      if (true) {
+        console.log('true');
+      }
+      else {
+        console.log('false');
+      }
+      //
+      switch (x) {
+        case 1:
+          console.log('1');
+          break;
+        case 2:
+          console.log('2');
+          break;
+        default:
+          console.log('default');
+          break;
+      }
+      `,
+    },
+    gmlSide: {
+      title: "Objects test gml",
+      desc: "Object test desc",
+      code: `//Objects test gml`,
+    },
+  };
   return (
     <Nav
       variant="pills"
@@ -196,7 +231,9 @@ function PageNavbar({ onNavClick }: any) {
         <Nav.Link eventKey="loops" onClick={() => handleClick(loopsOption)}>
           Loops
         </Nav.Link>
-        <Nav.Link eventKey="ifs">if, else, switch</Nav.Link>
+        <Nav.Link eventKey="ifs" onClick={() => handleClick(ifsOption)}>
+          if, else, switch
+        </Nav.Link>
       </div>
     </Nav>
   );
