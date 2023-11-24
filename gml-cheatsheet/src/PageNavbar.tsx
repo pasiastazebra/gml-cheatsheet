@@ -23,9 +23,14 @@ function PageNavbar({ onNavClick }: any) {
       `,
     },
     gmlSide: {
-      title: "Variables test gml",
-      desc: "Variable test desc",
-      code: `//Variables test gml`,
+      title: "GML",
+      desc: "Variables in GML can be declared only using 'var' keyword, hovewer it is possible (but not recommended) to assign value without declaration. You can also declare constants using '#macro' keyword. ",
+      code: `
+      //variables in GML
+      var a = 1;
+      b = 2;
+      #macro c = a + b;
+      `,
     },
   };
 
