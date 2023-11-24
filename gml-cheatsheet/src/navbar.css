@@ -35,3 +35,34 @@
     background-color: hsl(247, 49%, 27%) !important;
     color: #ffffff !important;
 }
+
+.credits {
+    padding: 2px;
+
+    color: #e8e8e8;
+    font-size: 15px;
+    text-align: center;
+
+    background-color: hsla(247, 49%, 27%, 0.7);
+
+    border-radius: 10px;
+
+    transition-duration: 0.3s;
+}
+
+.credits:hover {
+    background-color: hsla(247, 49%, 27%, 1);
+
+    transition-duration: 0.3s;
+}
+
+.credits-link {
+    color: #e8e8e8;
+
+    transition-duration: 0.3s;
+}
+
+.credits-link:hover {
+    font-size: 17px;
+    transition-duration: 0.3s;
+}

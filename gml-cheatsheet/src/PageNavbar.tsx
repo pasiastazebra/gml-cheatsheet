@@ -329,6 +329,12 @@ function PageNavbar({ onNavClick }: any) {
         <Nav.Link eventKey="ifs" onClick={() => handleClick(ifsOption)}>
           if, else, switch
         </Nav.Link>
+        <p className="credits">
+          Made with 💚 by{" "}
+          <a href="https://github.com/pasiastazebra" className="credits-link">
+            Konrad
+          </a>
+        </p>
       </div>
     </Nav>
   );
