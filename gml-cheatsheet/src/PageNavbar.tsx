@@ -219,9 +219,20 @@ function PageNavbar({ onNavClick }: any) {
       `,
     },
     gmlSide: {
-      title: "Objects test gml",
-      desc: "Object test desc",
-      code: `//Objects test gml`,
+      title: "GML",
+      desc: "GML offerst for and while loop aswell.",
+      code: `
+      //loops in GML
+      
+      for (var i = 0; i < 10; i++) {
+        console.log(i);
+      }
+
+      while (true) {
+        show_debug_message("hello");
+        break;
+      }
+      `,
     },
   };
 
