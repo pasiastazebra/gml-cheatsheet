@@ -1,4 +1,5 @@
 import Nav from "react-bootstrap/Nav";
+import "./navbar.css";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function PageNavbar({ onNavClick }: any) {
@@ -30,7 +31,12 @@ function PageNavbar({ onNavClick }: any) {
     },
   };
   return (
-    <Nav variant="pills" defaultActiveKey="variables" className="flex-column">
+    <Nav
+      variant="pills"
+      defaultActiveKey="variables"
+      className="menu flex-column"
+    >
+      <p id="menuLabel">Menu</p>
       <Nav.Link
         eventKey="variables"
         onClick={() => handleClick(variablesOption)}
