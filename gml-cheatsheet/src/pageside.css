@@ -1,3 +1,22 @@
 .page-side {
     padding: 3%;
 }
+
+.page-side-card {
+    background-color: #564bac !important;
+
+    color: #d3d0ed !important;
+}
+
+.page-side-card-wrapper {
+    padding: 2.5%;
+}
+
+.page-side-card-title {
+    background-color: #413a7f !important;
+}
+
+.page-side-card-description {
+    color: #d3d0ed;
+    font-weight: 400;
+}
