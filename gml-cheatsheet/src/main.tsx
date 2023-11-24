@@ -4,9 +4,17 @@ import App from "./App.tsx";
 import PageContent from "./PageContent.tsx";
 import "./index.css";
 
+const pageTitle: string = "Page title test";
+const jsDesc: string = "JS description test";
+const jsCode: string = `//JavaScript
+const a = 1;
+  const b = 2;
+    const c = a + b;
+`;
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
-    <PageContent />
+    <PageContent pageTitle={pageTitle} jsDesc={jsDesc} jsCode={jsCode} />
   </React.StrictMode>
 );
