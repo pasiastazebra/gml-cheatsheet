@@ -11,22 +11,29 @@ function App() {
   }
 
   const placeholder = {
-    pageTitle: "Placeholder",
+    pageTitle: "Variables",
     jSide: {
-      title: "Placeholder test js",
-      desc: "Placeholder desc",
+      title: "JavaScript",
+      desc: "Variables can be declared using 'var' or 'let' keyword. You can also declare constances using 'const' declaration. You have to declare variable.",
       code: `
       //variables in js
       var a = 1;
       let b = 2;
 
       const c = a + b;
+
+      xyz = 'hey'; //<--this code is invalid
       `,
     },
     gmlSide: {
-      title: "Placeholder test gml",
-      desc: "Placeholder desc",
-      code: `//Placeholder test gml`,
+      title: "GML",
+      desc: "Variables in GML can be declared only using 'var' keyword, hovewer it is possible (but not recommended) to assign value without declaration. You can also declare constants using '#macro' keyword. ",
+      code: `
+      //variables in GML
+      var a = 1;
+      b = 2;
+      #macro c = a + b;
+      `,
     },
   };
 
