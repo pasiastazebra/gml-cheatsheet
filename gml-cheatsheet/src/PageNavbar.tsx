@@ -102,6 +102,35 @@ function PageNavbar({ onNavClick }: any) {
       code: `//Objects test gml`,
     },
   };
+
+  const operatorsOption = {
+    pageTitle: "Objects",
+    jSide: {
+      title: "JavaScript",
+      desc: "Operators:",
+      code: `
+      //operators in js
+      let operators;
+      //aritmetic operators
+      operators = [+, -, *, **, /, %, ++, --];
+      //assignment operators
+      operators = [=, +=, -=, *=, **=, /=, %=, <<=, >>=, >>>=, &=, ^=, |=];
+      //comparison operators
+      operators = [==, ===, !=, !==, >, <, >=, <=];
+      //logical operators
+      operators = [&&, ||, !];
+      //bitwise operators
+      operators = [~, &, |, ^, <<, >>, >>>];
+      //ternary operator
+      operators = [? :];
+      `,
+    },
+    gmlSide: {
+      title: "Objects test gml",
+      desc: "Object test desc",
+      code: `//Objects test gml`,
+    },
+  };
   return (
     <Nav
       variant="pills"
@@ -128,7 +157,12 @@ function PageNavbar({ onNavClick }: any) {
         >
           Functions
         </Nav.Link>
-        <Nav.Link eventKey="operators">Operators</Nav.Link>
+        <Nav.Link
+          eventKey="operators"
+          onClick={() => handleClick(operatorsOption)}
+        >
+          Operators
+        </Nav.Link>
         <Nav.Link eventKey="loops">Loops</Nav.Link>
         <Nav.Link eventKey="ifs">if, else, switch</Nav.Link>
       </div>
