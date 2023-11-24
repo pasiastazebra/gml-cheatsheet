@@ -6,6 +6,8 @@
 
     color: #e8e8e8;
     font-weight: 500;
+
+    background-color: hsl(247, 49%, 7%);
 }
 
 .menu {
@@ -13,8 +15,10 @@
 
     height: 100vh;
     width: 20vw;
+}
 
-    padding: 1%;
+.nav-wrapper {
+    padding: 5%;
 }
 
 .nav-link {
