@@ -11,13 +11,15 @@ function PageNavbar({ onNavClick }: any) {
     pageTitle: "Variables",
     jSide: {
       title: "JavaScript",
-      desc: "Variables can be declared using 'var' or 'let' keyword. You can also declare constances using 'const' declaration.",
+      desc: "Variables can be declared using 'var' or 'let' keyword. You can also declare constances using 'const' declaration. You have to declare variable.",
       code: `
       //variables in js
       var a = 1;
       let b = 2;
 
       const c = a + b;
+
+      xyz = 'hey'; //<--this code is invalid
       `,
     },
     gmlSide: {
@@ -27,12 +29,56 @@ function PageNavbar({ onNavClick }: any) {
     },
   };
 
+  const arraysOption = {
+    pageTitle: "Arrays",
+    jSide: {
+      title: "JavaScript",
+      desc: "Objects can store variables, arrays, methods and other objects.",
+      code: `
+      //objects in js
+      const obj = {
+        objName: 'cube',
+        objType: 'solid',
+        objProperties: {
+          color: 'red',
+          size: [10, 10, 10]
+        },
+        logInfo: function() {
+            return [this.objName, this.objType, this.objProperties];
+        }
+      }
+    
+      console.log(obj.logInfo()); // ['cube', 'solid' {color: 'red', size: [ 10, 10, 10 ] } ]
+      `,
+    },
+    gmlSide: {
+      title: "Objects test gml",
+      desc: "Object test desc",
+      code: `//Objects test gml`,
+    },
+  };
+
   const objectsOption = {
     pageTitle: "Objects",
     jSide: {
-      title: "Objects test js",
-      desc: "Object description",
-      code: `//Objects test`,
+      title: "JavaScript",
+      desc: "Objects can store variables, arrays, methods and other objects.",
+      code: `
+      //objects in js
+      const obj = {
+        objName: 'cube',
+        objType: 'solid',
+        objProperties: {
+          color: 'red',
+          size: [10, 10, 10]
+        },
+        logInfo: function() {
+            return [this.objName, this.objType, this.objProperties];
+        }
+      }
+    
+      console.log(obj.logInfo()); // ['cube', 'solid' {color: 'red', size: [ 10, 10, 10 ] } ]
+      `,
     },
     gmlSide: {
       title: "Objects test gml",
@@ -54,10 +100,12 @@ function PageNavbar({ onNavClick }: any) {
         >
           Variables
         </Nav.Link>
-        <Nav.Link eventKey="arrays" onClick={() => handleClick(objectsOption)}>
+        <Nav.Link eventKey="arrays" onClick={() => handleClick(arraysOption)}>
           Arrays
         </Nav.Link>
-        <Nav.Link eventKey="objects">Objects</Nav.Link>
+        <Nav.Link eventKey="objects" onClick={() => handleClick(objectsOption)}>
+          Objects
+        </Nav.Link>
         <Nav.Link eventKey="functions">Functions</Nav.Link>
         <Nav.Link eventKey="operators">Operators</Nav.Link>
         <Nav.Link eventKey="loops">Loops</Nav.Link>
