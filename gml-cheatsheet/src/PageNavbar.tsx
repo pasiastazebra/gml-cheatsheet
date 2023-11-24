@@ -240,7 +240,7 @@ function PageNavbar({ onNavClick }: any) {
     pageTitle: "If, else and swtich statements",
     jSide: {
       title: "JavaScript",
-      desc: "JavaScript offers for, for in, for of and while loop.",
+      desc: "Code:",
       code: `
       //if, else & switch in js
       
@@ -265,9 +265,30 @@ function PageNavbar({ onNavClick }: any) {
       `,
     },
     gmlSide: {
-      title: "Objects test gml",
-      desc: "Object test desc",
-      code: `//Objects test gml`,
+      title: "GML",
+      desc: "Code is exactly the same:",
+      code: `
+      //if, esle & switch in GML
+      
+      if (true) {
+        show_debug_message("true");
+      }
+      else {
+        show_debug_message("false");
+      }
+      //
+      switch (x) {
+        case 1:
+          show_debug_message("1");
+          break;
+        case 2:
+          show_debug_message("2");
+          break;
+        default:
+          show_debug_message("default");
+          break;
+      }
+      `,
     },
   };
   return (
