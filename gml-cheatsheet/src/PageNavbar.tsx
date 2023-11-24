@@ -131,6 +131,36 @@ function PageNavbar({ onNavClick }: any) {
       code: `//Objects test gml`,
     },
   };
+
+  const loopsOption = {
+    pageTitle: "Loops",
+    jSide: {
+      title: "JavaScript",
+      desc: "JavaScript offers for, for in, for of and while loop.",
+      code: `
+      //loops in js
+      
+      for (let i = 0; i < 10; i++) {
+        console.log(i);
+      }
+      //
+      const numbers = [1, 2, 3];
+      for (let number of numbers) {
+        console.log(number);
+      }
+      //
+      while (true) {
+        console.log('hello');
+        break;
+      }
+      `,
+    },
+    gmlSide: {
+      title: "Objects test gml",
+      desc: "Object test desc",
+      code: `//Objects test gml`,
+    },
+  };
   return (
     <Nav
       variant="pills"
@@ -163,7 +193,9 @@ function PageNavbar({ onNavClick }: any) {
         >
           Operators
         </Nav.Link>
-        <Nav.Link eventKey="loops">Loops</Nav.Link>
+        <Nav.Link eventKey="loops" onClick={() => handleClick(loopsOption)}>
+          Loops
+        </Nav.Link>
         <Nav.Link eventKey="ifs">if, else, switch</Nav.Link>
       </div>
     </Nav>
