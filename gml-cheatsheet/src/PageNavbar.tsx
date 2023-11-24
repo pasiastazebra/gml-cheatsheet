@@ -67,7 +67,9 @@ function PageNavbar({ onNavClick }: any) {
         }
       }
     
-      console.log(obj.logInfo()); // ['cube', 'solid' {color: 'red', size: [ 10, 10, 10 ] } ]
+      console.log(obj.logInfo()); // ['cube', 'solid',
+                                  //  {color: 'red',
+                                  //   size: [ 10, 10, 10 ] } ]
       `,
     },
     gmlSide: {
@@ -111,16 +113,22 @@ function PageNavbar({ onNavClick }: any) {
       code: `
       //operators in js
       let operators;
+
       //aritmetic operators
       operators = [+, -, *, **, /, %, ++, --];
+
       //assignment operators
       operators = [=, +=, -=, *=, **=, /=, %=, <<=, >>=, >>>=, &=, ^=, |=];
+
       //comparison operators
       operators = [==, ===, !=, !==, >, <, >=, <=];
+
       //logical operators
       operators = [&&, ||, !];
+
       //bitwise operators
       operators = [~, &, |, ^, <<, >>, >>>];
+
       //ternary operator
       operators = [? :];
       `,
