@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import PageContent from "./PageContent.tsx";
-import "./index.css";
+import PageNavbar from "./PageNavbar.tsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+//import "./index.css";
 
 const pageTitle: string = "Page title test";
 const jSide = {
@@ -15,6 +17,7 @@ const gmlSide = {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    <PageNavbar />
     <PageContent pageTitle={pageTitle} jSide={jSide} gmlSide={gmlSide} />
   </React.StrictMode>
 );
