@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg' */
 import "./App.css";
 import { useEffect } from "react";
 import hljs from "highlight.js";
-import "highlight.js/styles/github.css";
+import "highlight.js/styles/hybrid.css";
 
 const innerCode = `//javascript
 const a = 1;
