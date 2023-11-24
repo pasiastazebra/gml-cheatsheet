@@ -127,9 +127,15 @@ function PageNavbar({ onNavClick }: any) {
       `,
     },
     gmlSide: {
-      title: "Objects test gml",
-      desc: "Object test desc",
-      code: `//Objects test gml`,
+      title: "GML",
+      desc: "Functions in GML can be declared only using 'function()' keyword.",
+      code: `
+      //functions in GML
+      
+      var add = function (a, b) {
+        return a + b;
+      }
+      `,
     },
   };
 
