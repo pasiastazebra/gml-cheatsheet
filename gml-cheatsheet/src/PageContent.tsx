@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import hljs from "highlight.js";
-import "highlight.js/styles/hybrid.css";
 import PageSide from "./PageSide";
 
 interface PageSideObjectProps {
@@ -14,10 +11,6 @@ interface PageContentProps {
 }
 
 function PageContent({ pageTitle, jSide, gmlSide }: PageContentProps) {
-  useEffect(() => {
-    hljs.highlightAll();
-  });
-
   return (
     <div>
       <h1>{pageTitle}</h1>
