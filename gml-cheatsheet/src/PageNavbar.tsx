@@ -33,22 +33,12 @@ function PageNavbar({ onNavClick }: any) {
     pageTitle: "Arrays",
     jSide: {
       title: "JavaScript",
-      desc: "Objects can store variables, arrays, methods and other objects.",
+      desc: "Arrays can store values and methods.",
       code: `
-      //objects in js
-      const obj = {
-        objName: 'cube',
-        objType: 'solid',
-        objProperties: {
-          color: 'red',
-          size: [10, 10, 10]
-        },
-        logInfo: function() {
-            return [this.objName, this.objType, this.objProperties];
-        }
-      }
-    
-      console.log(obj.logInfo()); // ['cube', 'solid' {color: 'red', size: [ 10, 10, 10 ] } ]
+      //arrays in js
+      const arr = [1, 2, 3, () => { return(4); }];
+
+      console.log(arr[3]()); //4
       `,
     },
     gmlSide: {
