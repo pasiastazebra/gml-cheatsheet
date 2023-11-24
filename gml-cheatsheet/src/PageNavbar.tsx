@@ -85,9 +85,25 @@ function PageNavbar({ onNavClick }: any) {
       `,
     },
     gmlSide: {
-      title: "Objects test gml",
-      desc: "Object test desc",
-      code: `//Objects test gml`,
+      title: "GML",
+      desc: "Objects can store variables, arrays, methods and other objects aswell.",
+      code: `//objects in GML
+      var obj = {
+        objName: "cube",
+        objType: "solid",
+        objProperties: {
+          color: "red",
+          size: [10, 10, 10]
+        },
+        logInfo: function() {
+            return [self.objName, self.objType, self.objProperties];
+        }
+      }
+    
+      show_debug_message(obj.logInfo()); // ['cube', 'solid',
+                                         //  {color: 'red',
+                                         //   size: [ 10, 10, 10 ] } ]
+      `,
     },
   };
 
