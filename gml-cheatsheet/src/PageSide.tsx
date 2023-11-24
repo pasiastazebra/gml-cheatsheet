@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import hljs from "highlight.js";
+import Highlight from "react-highlight";
 import Card from "react-bootstrap/Card";
 
 import "highlight.js/styles/hybrid.css";
@@ -12,9 +13,7 @@ interface Props {
 }
 
 function PageSide({ title, desc, code }: Props) {
-  useEffect(() => {
-    hljs.highlightAll();
-  }, []);
+  useEffect(() => hljs.highlightAll);
 
   return (
     <div className="page-side">
@@ -23,9 +22,7 @@ function PageSide({ title, desc, code }: Props) {
         <div className="page-side-card-wrapper">
           <Card.Text className="page-side-card-description">{desc}</Card.Text>
           <Card.Text>
-            <pre>
-              <code>{code}</code>
-            </pre>
+            <Highlight className="language-javascript">{code}</Highlight>
           </Card.Text>
         </div>
       </Card>

@@ -10,9 +10,15 @@ function PageNavbar({ onNavClick }: any) {
   const variablesOption = {
     pageTitle: "Variables",
     jSide: {
-      title: "Variables test js",
-      desc: "Variable description",
-      code: `//Variables test`,
+      title: "JavaScript",
+      desc: "Variables can be declared using 'var' or 'let' keyword. You can also declare constances using 'const' declaration.",
+      code: `
+      //variables in js
+      var a = 1;
+      let b = 2;
+
+      const c = a + b;
+      `,
     },
     gmlSide: {
       title: "Variables test gml",

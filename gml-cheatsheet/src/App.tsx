@@ -15,7 +15,13 @@ function App() {
     jSide: {
       title: "Placeholder test js",
       desc: "Placeholder desc",
-      code: `//Placeholder test`,
+      code: `
+      //variables in js
+      var a = 1;
+      let b = 2;
+
+      const c = a + b;
+      `,
     },
     gmlSide: {
       title: "Placeholder test gml",
