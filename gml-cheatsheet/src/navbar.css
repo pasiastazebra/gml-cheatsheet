@@ -1,3 +1,5 @@
+/* it's to late to uninstall Bootstrap so i'm overwriting his classes 😔 */
+
 #menuLabel {
     text-align: center;
     margin-bottom: 5px;
@@ -8,7 +10,11 @@
 
 .menu {
     background-color: hsl(247, 49%, 17%);
+
     height: 100vh;
+    width: 20vw;
+
+    padding: 1%;
 }
 
 .nav-link {

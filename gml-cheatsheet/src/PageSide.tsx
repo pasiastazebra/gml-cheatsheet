@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/hybrid.css";
+import "./pageside.css";
 
 interface Props {
   title: string;
