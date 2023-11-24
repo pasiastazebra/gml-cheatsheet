@@ -11,10 +11,12 @@ function PageNavbar({ onNavClick }: any) {
     pageTitle: "Variables",
     jSide: {
       title: "Variables test js",
+      desc: "Variable description",
       code: `//Variables test`,
     },
     gmlSide: {
       title: "Variables test gml",
+      desc: "Variable test desc",
       code: `//Variables test gml`,
     },
   };
@@ -23,10 +25,12 @@ function PageNavbar({ onNavClick }: any) {
     pageTitle: "Objects",
     jSide: {
       title: "Objects test js",
+      desc: "Object description",
       code: `//Objects test`,
     },
     gmlSide: {
       title: "Objects test gml",
+      desc: "Object test desc",
       code: `//Objects test gml`,
     },
   };

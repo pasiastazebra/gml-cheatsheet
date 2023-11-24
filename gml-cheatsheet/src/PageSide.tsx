@@ -7,10 +7,11 @@ import "./pageside.css";
 
 interface Props {
   title: string;
+  desc: string;
   code: string;
 }
 
-function PageSide({ title, code }: Props) {
+function PageSide({ title, desc, code }: Props) {
   useEffect(() => {
     hljs.highlightAll();
   }, []);
@@ -20,9 +21,7 @@ function PageSide({ title, code }: Props) {
       <Card className="page-side-card">
         <Card.Header className="page-side-card-title">{title}</Card.Header>
         <div className="page-side-card-wrapper">
-          <Card.Text className="page-side-card-description">
-            description placeholder
-          </Card.Text>
+          <Card.Text className="page-side-card-description">{desc}</Card.Text>
           <Card.Text>
             <pre>
               <code>{code}</code>

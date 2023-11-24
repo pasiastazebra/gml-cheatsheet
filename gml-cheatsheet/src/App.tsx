@@ -6,18 +6,20 @@ import PageNavbar from "./PageNavbar.tsx";
 function App() {
   interface PageContent {
     pageTitle: string;
-    jSide: { title: string; code: string };
-    gmlSide: { title: string; code: string };
+    jSide: { title: string; desc: string; code: string };
+    gmlSide: { title: string; desc: string; code: string };
   }
 
   const placeholder = {
     pageTitle: "Placeholder",
     jSide: {
       title: "Placeholder test js",
+      desc: "Placeholder desc",
       code: `//Placeholder test`,
     },
     gmlSide: {
       title: "Placeholder test gml",
+      desc: "Placeholder desc",
       code: `//Placeholder test gml`,
     },
   };

@@ -3,6 +3,7 @@ import "./pagecontent.css";
 
 interface PageSideObjectProps {
   title: string;
+  desc: string;
   code: string;
 }
 interface PageContentProps {
@@ -16,8 +17,12 @@ function PageContent({ pageTitle, jSide, gmlSide }: PageContentProps) {
     <div className="page-content">
       <h1>{pageTitle}</h1>
       <div className="page-content-articles">
-        <PageSide title={jSide.title} code={jSide.code} />
-        <PageSide title={gmlSide.title} code={gmlSide.code} />
+        <PageSide title={jSide.title} desc={jSide.desc} code={jSide.code} />
+        <PageSide
+          title={gmlSide.title}
+          desc={gmlSide.desc}
+          code={gmlSide.code}
+        />
       </div>
     </div>
   );
