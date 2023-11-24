@@ -168,9 +168,30 @@ function PageNavbar({ onNavClick }: any) {
       `,
     },
     gmlSide: {
-      title: "Objects test gml",
-      desc: "Object test desc",
-      code: `//Objects test gml`,
+      title: "GML",
+      desc: "Operators:",
+      code: `
+      //operators in GML
+      var operators;
+
+      //aritmetic operators
+      operators = [+, -, *, /, mod, ++, --];
+
+      //assignment operators
+      operators = [=, +=, -=, *=, /=];
+
+      //comparison operators |->in theory you can use '=' in comparison, hovewer it's not recommended <-|
+      operators = [==, !=, >, <, >=, <=];
+
+      //logical operators
+      operators = [&&, ||, !];
+
+      //bitwise operators
+      operators = [ &, |, ^, <<, >>];
+
+      //ternary operator
+      operators = [? :];
+      `,
     },
   };
 

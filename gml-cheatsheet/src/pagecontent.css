@@ -1,6 +1,9 @@
 .page-content {
-    width: 100%;
+    width: 85vw;
+    max-width: 85vw;
     padding: 1% 1%;
+
+    overflow: hidden;
 
     background-color: hsl(247, 35%, 27%);
     color: rgb(209, 209, 209);
