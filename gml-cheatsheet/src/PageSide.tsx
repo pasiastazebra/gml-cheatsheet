@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import hljs from "highlight.js";
 import Highlight from "react-highlight";
 import Card from "react-bootstrap/Card";
 
@@ -13,8 +11,6 @@ interface Props {
 }
 
 function PageSide({ title, desc, code }: Props) {
-  useEffect(() => hljs.highlightAll);
-
   return (
     <div className="page-side">
       <Card className="page-side-card">
