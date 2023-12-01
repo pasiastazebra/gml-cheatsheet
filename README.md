@@ -13,7 +13,7 @@ buliding
 # Initializating project
 
 ```
-cd spending-calculator
+cd gml-cheatsheet
 npm install
 npm run dev
 ```
