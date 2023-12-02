@@ -4,7 +4,7 @@ Cheatsheet with basic syntax of GML.
 
 # Live demo
 
-buliding
+https://pasiastazebra.github.io/gml-cheatsheet/
 
 # Technologies used
 
